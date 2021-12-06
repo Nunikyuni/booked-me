@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f6f6"
+    tools:context=".presentation.order.OrderDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:layout_marginRight="-20dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onClick"
+                android:background="@drawable/btn_back_brown3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:layout_marginRight="58dp"
+                android:layout_weight="1"
+                android:alpha=".8"
+                android:text="@string/checkout_details"
+                android:textColor="@color/black_s5"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Detail"
+                android:textSize="14sp"
+                android:textColor="@color/black_s5"
+                android:alpha=".8"
+                android:fontFamily="@font/poppins_semibold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gelato"
+                    android:textSize="14sp"
+                    android:textColor="@color/grey_s1"
+                    android:fontFamily="@font/poppins_semibold"/>
+                <TextView
+                    android:id="@+id/tv_user_tlp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(+62) 087704620821"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/grey_s1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/alamat"
+                android:textSize="12sp"
+                android:textColor="@color/grey_s1"
+                android:fontFamily="@font/poppins_semibold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white"
+            android:layout_marginBottom="16dp"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textSize="14sp"
+                android:textColor="@color/black_s5"
+                android:alpha=".8"
+                android:fontFamily="@font/poppins_semibold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/bni"/>
+
+                <TextView
+                    android:id="@+id/tv_book_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:alpha=".8"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Bank Transfer"
+                    android:textColor="@color/black_s5"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Rekening"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/grey_s4"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5201096107000001"
+                android:textSize="24sp"
+                android:textColor="@color/brown_2"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Atas Nama"
+                android:textSize="12sp"
+                android:textColor="@color/grey_s4"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BookedMe"
+                android:textSize="24sp"
+                android:textColor="@color/brown_2"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/list_order"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_white"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textSize="14sp"
+                android:textColor="@color/black_s5"
+                android:alpha=".8"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppins_semibold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price"
+                    android:textSize="12sp"
+                    android:layout_weight="0.9"
+                    android:textColor="@color/grey_s2"
+                    android:fontFamily="@font/poppins_semibold"/>
+                <TextView
+                    android:id="@+id/tv_user_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:text="Rp. 15.000"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/grey_s4"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Fee"
+                    android:textSize="12sp"
+                    android:layout_weight="0.9"
+                    android:textColor="@color/grey_s2"
+                    android:fontFamily="@font/poppins_semibold"/>
+                <TextView
+                    android:id="@+id/tv_admin_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:text="Rp. 2.000"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/grey_s4"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-16dp"
+                android:layout_marginRight="-16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_divider"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Pay"
+                    android:textSize="12sp"
+                    android:layout_weight="0.9"
+                    android:textColor="@color/grey_s2"
+                    android:fontFamily="@font/poppins_semibold"/>
+                <TextView
+                    android:id="@+id/tv_user_total_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:text="Rp. 17.000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/green_1"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_gradient"
+            android:text="Booked Me"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="72dp"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white_s6"/>
+
+    </LinearLayout>
+
+</ScrollView>
